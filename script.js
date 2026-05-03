@@ -95,9 +95,10 @@ function renderLineup() {
   if (!rows) return;
   const sorted = [...PRODUCTS].sort((a, b) => a[2] - b[2]);
   rows.innerHTML = sorted.map(p => {
-    const [sku, slug, cmh, area, klass] = p;
+    const [sku, slug, cmh, area, klass, img] = p;
     return `
       <a class="lineup-row" href="products/${slug}.html">
+        <div class="thumb"><img src="images/${img}" alt="${sku}" loading="lazy"></div>
         <div class="sku">${sku}</div>
         <div class="name">${klass}</div>
         <div class="cmh-cell">${cmh.toLocaleString()} CMH</div>
