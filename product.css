@@ -131,36 +131,51 @@
 
 .spec-big {
   margin: 0 0 80px;
-  padding: 56px 48px;
-  background: var(--surface);
-  border: 1px solid var(--line-soft);
-  border-radius: var(--r-xl);
-  box-shadow: var(--shadow-sm);
 }
 .spec-big h2 {
   font-family: var(--display); font-size: 32px;
   font-weight: 700; letter-spacing: -.02em;
-  margin-bottom: 32px;
+  color: var(--brand-darker);
+  padding-bottom: 16px;
+  margin-bottom: 28px;
+  border-bottom: 3px solid var(--brand-darker);
 }
-.spec-big h2 em { font-family: var(--serif); font-style: italic; font-weight: 400; color: var(--brand-deep); }
-.spec-grid {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 16px;
+.spec-big h2 em { color: var(--brand-deep); }
+
+.spec-table {
+  background: var(--surface);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
 }
-.spec-grid .item {
-  padding: 20px; background: var(--bg);
-  border: 1px solid var(--line-soft); border-radius: var(--r-md);
-  transition: border-color .2s;
+.spec-row {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 24px;
+  padding: 18px 28px;
+  align-items: center;
 }
-.spec-grid .item:hover { border-color: var(--brand); }
-.spec-grid .k {
-  font-size: 11px; color: var(--mute);
-  margin-bottom: 6px; font-weight: 600;
-  letter-spacing: .04em; text-transform: uppercase;
+.spec-row:nth-child(odd) { background: var(--mist-pale); }
+.spec-row .spec-k {
+  font-family: var(--display);
+  font-size: 16px; font-weight: 700;
+  color: var(--brand-darker);
+  letter-spacing: -.005em;
 }
-.spec-grid .v {
-  font-family: var(--display); font-weight: 700; font-size: 18px;
-  color: var(--text); letter-spacing: -.01em;
+.spec-row .spec-v {
+  font-size: 15.5px;
+  color: var(--text);
+}
+
+@media (max-width: 700px) {
+  .spec-row {
+    grid-template-columns: 130px 1fr;
+    gap: 16px;
+    padding: 14px 18px;
+  }
+  .spec-row .spec-k { font-size: 14px; }
+  .spec-row .spec-v { font-size: 14px; }
 }
 
 .related {
