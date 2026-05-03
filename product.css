@@ -1,0 +1,184 @@
+/* ============================================================
+   MIST.HK — product detail pages
+   ============================================================ */
+
+.product-page { padding: 140px 40px 80px; position: relative; z-index: 2; }
+.product-inner { max-width: 1400px; margin: 0 auto; }
+
+.crumb {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .15em;
+  text-transform: uppercase; color: var(--mute); margin-bottom: 60px;
+}
+.crumb a { color: var(--mute); transition: color .25s; }
+.crumb a:hover { color: var(--mist); }
+
+.product-hero {
+  display: grid; grid-template-columns: 1.1fr 1fr; gap: 60px;
+  margin-bottom: 100px;
+  align-items: start;
+}
+
+.gallery {
+  position: sticky; top: 100px;
+}
+.gallery-main {
+  aspect-ratio: 1;
+  border-radius: 20px; overflow: hidden;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  margin-bottom: 16px;
+  position: relative;
+}
+.gallery-main img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.gallery-main:hover img { transform: scale(1.04); }
+.gallery-cmh {
+  position: absolute; top: 24px; left: 24px;
+  background: rgba(5,5,7,.7); border: 1px solid var(--mist);
+  color: var(--mist); padding: 10px 18px; border-radius: 999px;
+  font-family: var(--mono); font-size: 12px; letter-spacing: .15em;
+  backdrop-filter: blur(8px);
+}
+.gallery-thumbs {
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px;
+}
+.gallery-thumbs button {
+  aspect-ratio: 1; border-radius: 8px; overflow: hidden;
+  border: 1px solid var(--line); background: var(--bg-2);
+  cursor: none; padding: 0; transition: border-color .25s;
+}
+.gallery-thumbs button.active { border-color: var(--mist); }
+.gallery-thumbs button img { width: 100%; height: 100%; object-fit: cover; }
+
+.product-info .eyebrow {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .25em;
+  text-transform: uppercase; color: var(--mist);
+  margin-bottom: 18px;
+}
+.product-info h1 {
+  font-family: var(--display);
+  font-size: clamp(48px, 6vw, 84px);
+  font-weight: 700; letter-spacing: -.03em; line-height: .95;
+  margin-bottom: 16px;
+}
+.product-info h1 em {
+  font-family: var(--serif); font-style: italic; font-weight: 300;
+  background: linear-gradient(135deg, var(--mist), var(--mist-2));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.product-info .desc {
+  color: var(--mute); font-size: 18px; margin: 28px 0;
+  font-family: var(--serif); font-weight: 300;
+  font-size: 22px; line-height: 1.4;
+}
+
+.spec-strip {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  gap: 0; margin: 32px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.spec-cell {
+  padding: 22px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.spec-cell:nth-child(2n) { border-right: none; }
+.spec-cell:nth-last-child(-n+2) { border-bottom: none; }
+.spec-cell .k {
+  font-family: var(--mono); font-size: 10px; letter-spacing: .15em;
+  text-transform: uppercase; color: var(--mute); margin-bottom: 8px;
+}
+.spec-cell .v {
+  font-family: var(--display); font-weight: 600;
+  font-size: 22px; letter-spacing: -.01em;
+}
+
+.cta-row { display: flex; gap: 14px; flex-wrap: wrap; margin: 32px 0; }
+
+.feature-list { margin: 40px 0; }
+.feature-list h3 {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .2em;
+  text-transform: uppercase; color: var(--mist); margin-bottom: 18px;
+}
+.feature-list ul { list-style: none; }
+.feature-list li {
+  padding: 16px 0; border-bottom: 1px solid var(--line);
+  display: flex; gap: 16px; align-items: baseline;
+}
+.feature-list li::before {
+  content: '/'; color: var(--mist); font-family: var(--mono);
+}
+.feature-list li:last-child { border-bottom: none; }
+
+/* Big spec block */
+.spec-big {
+  margin: 100px 0;
+  padding: 60px 0;
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+}
+.spec-big h2 {
+  font-family: var(--display); font-size: clamp(40px, 5vw, 72px);
+  font-weight: 600; letter-spacing: -.03em;
+  margin-bottom: 50px;
+}
+.spec-big h2 em {
+  font-family: var(--serif); font-style: italic; font-weight: 300;
+  color: var(--mist);
+}
+.spec-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+.spec-grid .item {
+  padding: 24px; border: 1px solid var(--line); border-radius: 12px;
+  background: var(--surface);
+  transition: border-color .25s;
+}
+.spec-grid .item:hover { border-color: var(--mist); }
+.spec-grid .k {
+  font-family: var(--mono); font-size: 10px; letter-spacing: .15em;
+  text-transform: uppercase; color: var(--mute); margin-bottom: 10px;
+}
+.spec-grid .v {
+  font-family: var(--display); font-weight: 600; font-size: 24px;
+}
+
+/* Related */
+.related {
+  padding: 120px 40px;
+  position: relative; z-index: 2;
+  background: var(--bg-2);
+  border-top: 1px solid var(--line);
+}
+.related-inner { max-width: 1600px; margin: 0 auto; }
+.related h2 {
+  font-family: var(--display); font-size: clamp(36px, 5vw, 64px);
+  font-weight: 600; letter-spacing: -.03em; margin-bottom: 60px;
+}
+.related h2 em { font-family: var(--serif); font-style: italic; font-weight: 300; color: var(--mist); }
+.related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+.related-card {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px;
+  background: var(--surface);
+  transition: transform .35s, border-color .25s;
+}
+.related-card:hover { transform: translateY(-6px); border-color: var(--mist); }
+.related-card .img-wrap {
+  aspect-ratio: 1; border-radius: 10px; overflow: hidden;
+  background: var(--bg); margin-bottom: 14px;
+}
+.related-card img { width: 100%; height: 100%; object-fit: cover; }
+.related-card .cmh {
+  font-family: var(--mono); font-size: 10px; color: var(--mist);
+  letter-spacing: .15em; margin-bottom: 4px;
+}
+.related-card h4 { font-family: var(--display); font-size: 18px; font-weight: 600; }
+
+@media (max-width: 1000px) {
+  .product-page { padding: 120px 20px 60px; }
+  .product-hero { grid-template-columns: 1fr; gap: 40px; }
+  .gallery { position: static; }
+  .related { padding: 80px 20px; }
+}
