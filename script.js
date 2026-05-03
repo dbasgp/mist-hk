@@ -19,7 +19,7 @@ const PRODUCTS = [
   ["DEBI002C-H (Black)","debi002c-h-black",9000,"1,000 sq ft","Commercial","debi002c-h-black-1.jpg",
    "Same engine in black — events, hospitality, premium retail.",
    "1,000 平方呎","商用","黑色款式，同等規格 — 適合活動、餐飲及精品零售。"],
-  ["DEBI001C","debi001c",12000,"1,200 sq ft","Industrial","debi001c-1.jpg",
+  ["DEBI001C (White)","debi001c",12000,"1,200 sq ft","Industrial","debi001c-1.jpg",
    "Industrial workhorse — open warehouse bays and shop floors.",
    "1,200 平方呎","工業","工業主力機 — 開放倉庫及廠房空間。"],
   ["DEBI001C (Black)","debi001c-black",12000,"1,200 sq ft","Industrial","debi001c-black-1.jpg",
@@ -31,9 +31,9 @@ const PRODUCTS = [
   ["DBA-F250K","dba-f250k",25000,"2,500 sq ft","Industrial Fan","dba-f250k-1.jpg",
    "Industrial portable fan — pure airflow, no evaporation.",
    "2,500 平方呎","工業風扇","工業流動風扇 — 純風量，不需用水。"],
-  ["DBA-F380K","dba-f380k",38000,"3,000 sq ft","Industrial Fan","dba-f380k-1.jpg",
+  ["DBA-F380K","dba-f380k",38000,"5,000 sq ft","Industrial Fan","dba-f380k-1.jpg",
    "Flagship industrial fan — 38,000 m³/h. Warehouses and dockyards.",
-   "3,000 平方呎","工業風扇","旗艦工業風扇 — 38,000 m³/h，適合倉庫及碼頭。"],
+   "5,000 平方呎","工業風扇","旗艦工業風扇 — 38,000 m³/h，適合倉庫及碼頭。"],
 ];
 
 /* ========= I18N DICTIONARY ========= */
@@ -101,9 +101,6 @@ const T = {
     'apps.gym.badge': '運動健身',
     'apps.gym.title': '健身室及體育館',
     'apps.gym.body': '取代滯留的座地風扇，提供高風量清涼氣流，真正降低露點。',
-    'apps.custom.badge': '自訂',
-    'apps.custom.title': '其他場景？',
-    'apps.custom.body': '告訴我們你的空間需要 — 我們會為你配置或安排短期租賃。',
 
     'lineup.eyebrow': '完整型號',
     'lineup.title.html': '全部 <em>10</em> 款型號。',
@@ -222,9 +219,6 @@ const T = {
     'apps.gym.badge': 'Sport & fitness',
     'apps.gym.title': 'Gyms & sport halls',
     'apps.gym.body': 'Replace stagnant pedestal fans with high-volume cool airflow that actually drops the dew point.',
-    'apps.custom.badge': 'Custom',
-    'apps.custom.title': 'Something else?',
-    'apps.custom.body': "Tell us about the space — we'll spec a unit or rent one out for the season.",
 
     'lineup.eyebrow': 'Full lineup',
     'lineup.title.html': 'All <em>10</em> models.',
