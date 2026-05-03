@@ -28,12 +28,12 @@ const PRODUCTS = [
   ["DEBI001C-H","debi001c-h",18000,"1,800 sq ft","Flagship","debi001c-h-1.jpg",
    "Flagship industrial — H-series upgraded. 18,000 m³/h.",
    "1,800 平方呎","旗艦","旗艦工業款 — H 系列升級版，18,000 m³/h。"],
-  ["DBA-F250K","dba-f250k",25000,"—","Industrial Fan","dba-f250k-1.jpg",
+  ["DBA-F250K","dba-f250k",25000,"2,500 sq ft","Industrial Fan","dba-f250k-1.jpg",
    "Industrial portable fan — pure airflow, no evaporation.",
-   "—","工業風扇","工業流動風扇 — 純風量，不需用水。"],
-  ["DBA-F380K","dba-f380k",38000,"—","Industrial Fan","dba-f380k-1.jpg",
+   "2,500 平方呎","工業風扇","工業流動風扇 — 純風量，不需用水。"],
+  ["DBA-F380K","dba-f380k",38000,"3,000 sq ft","Industrial Fan","dba-f380k-1.jpg",
    "Flagship industrial fan — 38,000 m³/h. Warehouses and dockyards.",
-   "—","工業風扇","旗艦工業風扇 — 38,000 m³/h，適合倉庫及碼頭。"],
+   "3,000 平方呎","工業風扇","旗艦工業風扇 — 38,000 m³/h，適合倉庫及碼頭。"],
 ];
 
 /* ========= I18N DICTIONARY ========= */
