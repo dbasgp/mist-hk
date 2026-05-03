@@ -26,9 +26,9 @@
   --mist-pale: #e8f8fa;
 
   /* Type */
-  --display: 'Manrope', -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
-  --serif: 'Fraunces', 'Georgia', serif;
-  --body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --display: 'Manrope', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'PingFang TC', 'Microsoft JhengHei', 'Inter', sans-serif;
+  --serif: 'Fraunces', 'Noto Serif TC', 'Songti TC', Georgia, serif;
+  --body: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'PingFang TC', 'Microsoft JhengHei', sans-serif;
 
   /* Shadow */
   --shadow-sm: 0 1px 3px rgba(10, 51, 64, 0.06), 0 4px 12px rgba(10, 51, 64, 0.04);
@@ -627,6 +627,33 @@ footer {
   padding-top: 24px; border-top: 1px solid rgba(255,255,255,.1);
   display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px;
   font-size: 13px; color: rgba(255,255,255,.45);
+}
+
+/* ====== I18N — em handling for Chinese (no italic in TC) ====== */
+html[lang="zh-Hant"] em,
+html[lang="zh-HK"] em {
+  font-style: normal;
+  font-family: var(--display);
+  font-weight: 700;
+}
+
+/* Language switcher in nav */
+.lang-toggle {
+  margin-left: 4px;
+  padding: 8px 14px;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 999px;
+  background: transparent;
+  color: rgba(255,255,255,.78);
+  font-size: 12px; font-weight: 600;
+  letter-spacing: .04em;
+  cursor: pointer;
+  transition: all .2s;
+  font-family: var(--body);
+}
+.lang-toggle:hover {
+  border-color: var(--brand-bright);
+  color: var(--brand-bright);
 }
 
 /* ====== REVEAL ====== */
