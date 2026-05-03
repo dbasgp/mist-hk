@@ -58,6 +58,7 @@ function renderGrid(filter) {
     const card = document.createElement('a');
     card.className = 'product-card reveal in';
     card.href = `products/${slug}.html`;
+    const areaText = area === '—' ? 'Industrial fan · pure airflow' : area + ' coverage';
     card.innerHTML = `
       <div class="img-wrap">
         <div class="cmh-badge">${cmh.toLocaleString()} CMH</div>
@@ -66,7 +67,7 @@ function renderGrid(filter) {
       <div class="body">
         <div class="klass">${klass}</div>
         <h3>${sku}</h3>
-        <div class="area">${area === '—' ? blurb.split('—')[0].trim() : area + ' coverage'}</div>
+        <div class="area">${areaText}</div>
         <span class="view">View specs</span>
       </div>
     `;
