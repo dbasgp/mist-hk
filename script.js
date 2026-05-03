@@ -118,8 +118,8 @@ const T = {
     'card.viewSpecs': '查看規格',
     'card.fanText': '工業風扇 · 純風量',
 
-    'contact.title.html': '與我們<em>談談</em>風量。',
-    'contact.sub': '配置型號、查詢租賃、申請場地評估，或索取產品型錄。我們服務港九新界，提供即日送貨及一年保用。',
+    'contact.title.html': '<em>聯絡</em>我們。',
+    'contact.sub': '買機、租機，或者想我們上門睇場？歡迎 WhatsApp 或來電。港九新界即日送貨，全機一年保用。',
     'contact.phone': '電話',
     'contact.email': '電郵',
 
@@ -239,8 +239,8 @@ const T = {
     'card.viewSpecs': 'View specs',
     'card.fanText': 'Industrial fan · pure airflow',
 
-    'contact.title.html': 'Talk to us about <em>airflow.</em>',
-    'contact.sub': 'Spec a unit, ask about rentals, request a site assessment, or pull a catalog. We cover Hong Kong, Kowloon, and the New Territories with same-day delivery and a 1-year warranty.',
+    'contact.title.html': 'Get in <em>touch</em>.',
+    'contact.sub': 'Buying, renting, or want us to look at the space? WhatsApp or call. Same-day delivery across Hong Kong, Kowloon, and the New Territories — one-year warranty on every unit.',
     'contact.phone': 'Phone',
     'contact.email': 'Email',
 
