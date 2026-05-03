@@ -43,7 +43,7 @@ const T = {
     'meta.desc': '為香港住宅、辦公室、工場及倉庫提供蒸發式冷風機與工業風扇。風量由 1,500 至 38,000 CMH，比傳統冷氣節能 80%，免費送貨上門，一年保用。',
     'lang.toggle': 'EN',
 
-    'nav.why': '為何選蒸發式',
+    'nav.why': '選用DBA冷風機',
     'nav.products': '產品',
     'nav.apps': '應用場景',
     'nav.lineup': '完整型號',
@@ -60,7 +60,7 @@ const T = {
     'hero.feat.html': '主打 · 商用<strong>DEBI002C-H · 9,000 CMH</strong>',
     'hero.view': '查看 →',
 
-    'why.eyebrow': '為何選蒸發式',
+    'why.eyebrow': '選用DBA冷風機',
     'why.title.html': '一種更<em>天然</em>的降溫方式。',
     'why.sub': '空氣通過浸滿水的蜂窩濾網時，水分蒸發帶走熱量，吹出 5–12°C 的清涼空氣。無壓縮機、無雪種、無需密閉空間。',
     'why.c1.title': '降溫達 12°C',
@@ -164,7 +164,7 @@ const T = {
     'meta.desc': "Evaporative air coolers and industrial fans for Hong Kong — from 1,500 to 38,000 CMH airflow. Cool spaces up to 1,800 sq ft with 80% less energy than air-conditioning. Free HK delivery, 1-year warranty.",
     'lang.toggle': '繁',
 
-    'nav.why': 'Why evaporative',
+    'nav.why': 'Why DBA',
     'nav.products': 'Products',
     'nav.apps': 'Applications',
     'nav.lineup': 'Full lineup',
@@ -181,7 +181,7 @@ const T = {
     'hero.feat.html': 'Featured · Commercial<strong>DEBI002C-H · 9,000 CMH</strong>',
     'hero.view': 'View →',
 
-    'why.eyebrow': 'Why evaporative',
+    'why.eyebrow': 'Why DBA Coolers',
     'why.title.html': 'A cooler way to <em>cool.</em>',
     'why.sub': 'Air drawn through a saturated honeycomb pad gives up its heat to evaporating water — leaving the air 5–12°C cooler. No compressor, no refrigerant, no sealed room.',
     'why.c1.title': 'Up to 12°C cooler',
