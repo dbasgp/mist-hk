@@ -9,7 +9,8 @@
   <link rel="alternate" hreflang="en" href="https://www.mist.hk/?lang=en" />
   <link rel="alternate" hreflang="x-default" href="https://www.mist.hk/" />
   <meta name="keywords" content="冷風機, 冷風機 香港, 蒸發式冷風機, 室外冷風機, 降溫機, 工業冷風機, 商用冷風機, 工業風扇, air cooler Hong Kong, evaporative cooler" />
-  <meta name="theme-color" content="#00e3f4" />
+  <meta name="theme-color" content="#0a0d10" />
+  <meta name="color-scheme" content="dark" />
   <link rel="canonical" href="https://www.mist.hk/" />
 
   <meta property="og:type" content="website" />
@@ -201,135 +202,212 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=Fraunces:ital,wght@0,400;0,500;1,400;1,500&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800;900&family=Geist+Mono:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
 </head>
 <body>
 
-<!-- NAV -->
+<!-- LOGO TEMPLATE (cloned by script.js into .logo placements) -->
+<template id="logo-tpl"><svg aria-label="MIST.HK" xmlns="http://www.w3.org/2000/svg" viewBox="40 105 685 145" preserveAspectRatio="xMidYMid meet"><g transform="matrix(1, 0, 0, 1, 456, 109)"><g><g fill="currentColor"><g transform="translate(0.843875, 128.481199)"><g><path d="M 60.375 -116.519531 L 53.25 -71.445312 L 51.578125 -71.710938 L 51.578125 -73.40625 L 95.410156 -73.40625 L 95.410156 -71.710938 L 93.734375 -71.976562 L 101.085938 -118.476562 L 134.871094 -118.476562 L 115.90625 1.695312 L 82.117188 1.695312 L 90.019531 -48.125 L 91.691406 -47.859375 L 91.691406 -46.164062 L 47.859375 -46.164062 L 47.859375 -47.859375 L 49.53125 -47.59375 L 41.714844 1.695312 L 7.929688 1.695312 L 26.894531 -118.476562 L 60.683594 -118.476562 Z M 57.027344 -117.046875 L 58.699219 -116.78125 L 58.699219 -115.089844 L 28.34375 -115.089844 L 28.34375 -116.78125 L 30.015625 -116.519531 L 11.585938 0.265625 L 9.914062 0 L 9.914062 -1.695312 L 40.269531 -1.695312 L 40.269531 0 L 38.597656 -0.265625 L 46.414062 -49.554688 L 93.675781 -49.554688 L 85.773438 0.265625 L 84.101562 0 L 84.101562 -1.695312 L 114.460938 -1.695312 L 114.460938 0 L 112.785156 -0.265625 L 131.21875 -117.046875 L 132.890625 -116.78125 L 132.890625 -115.089844 L 102.53125 -115.089844 L 102.53125 -116.78125 L 104.207031 -116.519531 L 96.855469 -70.015625 L 49.59375 -70.015625 Z M 57.027344 -117.046875 "/></g></g></g></g><g><g fill="currentColor"><g transform="translate(121.807856, 128.481199)"><g><path d="M 60.375 -116.519531 L 52.785156 -68.351562 L 51.113281 -68.613281 L 51.113281 -70.308594 L 51.421875 -70.308594 L 51.421875 -68.613281 L 50.175781 -69.761719 L 94.972656 -118.476562 L 137.4375 -118.476562 L 79.414062 -60.292969 L 78.214844 -61.488281 L 79.625 -62.425781 L 122.265625 1.695312 L 78.816406 1.695312 L 47.191406 -49.761719 L 48.632812 -50.648438 L 48.632812 -48.953125 L 48.324219 -48.953125 L 48.324219 -50.648438 L 49.996094 -50.382812 L 41.714844 1.695312 L 7.929688 1.695312 L 26.894531 -118.476562 L 60.683594 -118.476562 Z M 57.027344 -117.046875 L 58.699219 -116.78125 L 58.699219 -115.089844 L 28.34375 -115.089844 L 28.34375 -116.78125 L 30.015625 -116.519531 L 11.585938 0.265625 L 9.914062 0 L 9.914062 -1.695312 L 40.269531 -1.695312 L 40.269531 0 L 38.597656 -0.265625 L 46.878906 -52.339844 L 49.582031 -52.339844 L 81.207031 -0.886719 L 79.765625 0 L 79.765625 -1.695312 L 119.105469 -1.695312 L 119.105469 0 L 117.695312 0.9375 L 76.039062 -61.703125 L 132.15625 -117.980469 L 133.355469 -116.78125 L 133.355469 -115.089844 L 95.71875 -115.089844 L 95.71875 -116.78125 L 96.964844 -115.636719 L 52.164062 -66.917969 L 49.128906 -66.917969 Z M 57.027344 -117.046875 "/></g></g></g></g></g><g transform="matrix(1, 0, 0, 1, 51, 109)"><g><g fill="currentColor"><g transform="translate(0.980068, 128.481199)"><g><path d="M 71.09375 -116.78125 L 85.03125 -54.359375 L 119.890625 -116.78125 L 150.09375 -116.78125 L 149.3125 0 L 118.953125 0 L 121.125 -67.21875 L 120.8125 -67.21875 L 82.09375 0 L 70.015625 0 L 53.90625 -67.21875 L 53.59375 -67.21875 L 33.140625 0 L 2.9375 0 L 41.203125 -116.78125 Z M 71.09375 -116.78125 "/></g></g></g><g fill="currentColor"><g transform="translate(149.823093, 128.481199)"><g><path d="M 58.703125 -116.78125 L 40.265625 0 L 9.90625 0 L 28.34375 -116.78125 Z M 58.703125 -116.78125 "/></g></g></g><g fill="currentColor"><g transform="translate(196.597884, 128.481199)"><g><path d="M 68.46875 -119.890625 C 80.957031 -119.890625 92.675781 -116.6875 103.625 -110.28125 L 87.828125 -86.734375 C 82.347656 -91.898438 76.046875 -94.484375 68.921875 -94.484375 C 65.203125 -94.484375 61.820312 -93.421875 58.78125 -91.296875 C 55.738281 -89.179688 54.21875 -86.578125 54.21875 -83.484375 C 54.21875 -81.210938 55.300781 -79.222656 57.46875 -77.515625 C 59.632812 -75.816406 63.609375 -74.140625 69.390625 -72.484375 C 77.234375 -70.109375 82.910156 -67.8125 86.421875 -65.59375 C 89.929688 -63.375 92.664062 -60.640625 94.625 -57.390625 C 96.59375 -54.140625 97.578125 -50.085938 97.578125 -45.234375 C 97.578125 -38.210938 95.769531 -30.773438 92.15625 -22.921875 C 88.539062 -15.078125 82.628906 -8.832031 74.421875 -4.1875 C 66.210938 0.457031 56.484375 2.882812 45.234375 3.09375 C 30.773438 3.09375 17.765625 -1.34375 6.203125 -10.21875 L 23.078125 -34.703125 C 31.128906 -26.640625 39.441406 -22.609375 48.015625 -22.609375 C 52.765625 -22.765625 56.765625 -23.847656 60.015625 -26.328125 C 63.273438 -28.804688 64.90625 -31.957031 64.90625 -35.78125 C 64.90625 -40.738281 59.945312 -44.554688 50.03125 -47.234375 C 38.050781 -50.546875 30.304688 -54.082031 26.796875 -57.84375 C 23.285156 -61.613281 21.53125 -66.648438 21.53125 -72.953125 C 21.53125 -86.171875 26.046875 -97.296875 35.078125 -106.328125 C 44.117188 -115.367188 55.25 -119.890625 68.46875 -119.890625 Z M 68.46875 -119.890625 "/></g></g></g><g fill="currentColor"><g transform="translate(285.655889, 128.481199)"><g><path d="M 99.90625 -116.78125 L 95.875 -91.078125 L 70.78125 -91.078125 L 56.375 0 L 26.015625 0 L 40.421875 -91.078125 L 15.328125 -91.078125 L 19.359375 -116.78125 Z M 99.90625 -116.78125 "/></g></g></g><g fill="currentColor"><g transform="translate(349.312966, 128.481199)"><g><path d="M 47.390625 -18.125 C 47.390625 -12.445312 45.195312 -7.488281 40.8125 -3.25 C 36.425781 0.976562 31.546875 3.09375 26.171875 3.09375 C 21.835938 3.09375 18.171875 1.648438 15.171875 -1.234375 C 12.179688 -4.128906 10.6875 -7.847656 10.6875 -12.390625 C 10.6875 -17.960938 12.878906 -22.8125 17.265625 -26.9375 C 21.660156 -31.070312 26.539062 -33.140625 31.90625 -33.140625 C 36.34375 -33.140625 40.03125 -31.71875 42.96875 -28.875 C 45.914062 -26.039062 47.390625 -22.457031 47.390625 -18.125 Z M 47.390625 -18.125 "/></g></g></g></g></g></svg></template>
+
+<!-- ============ NAV ============ -->
 <nav id="nav">
   <div class="nav-inner">
-    <a href="#" class="logo" aria-label="Mist.hk">
-      <svg aria-label="MIST.HK" xmlns="http://www.w3.org/2000/svg" viewBox="40 105 685 145" preserveAspectRatio="xMidYMid meet"><g transform="matrix(1, 0, 0, 1, 456, 109)"><g><g fill="currentColor"><g transform="translate(0.843875, 128.481199)"><g><path d="M 60.375 -116.519531 L 53.25 -71.445312 L 51.578125 -71.710938 L 51.578125 -73.40625 L 95.410156 -73.40625 L 95.410156 -71.710938 L 93.734375 -71.976562 L 101.085938 -118.476562 L 134.871094 -118.476562 L 115.90625 1.695312 L 82.117188 1.695312 L 90.019531 -48.125 L 91.691406 -47.859375 L 91.691406 -46.164062 L 47.859375 -46.164062 L 47.859375 -47.859375 L 49.53125 -47.59375 L 41.714844 1.695312 L 7.929688 1.695312 L 26.894531 -118.476562 L 60.683594 -118.476562 Z M 57.027344 -117.046875 L 58.699219 -116.78125 L 58.699219 -115.089844 L 28.34375 -115.089844 L 28.34375 -116.78125 L 30.015625 -116.519531 L 11.585938 0.265625 L 9.914062 0 L 9.914062 -1.695312 L 40.269531 -1.695312 L 40.269531 0 L 38.597656 -0.265625 L 46.414062 -49.554688 L 93.675781 -49.554688 L 85.773438 0.265625 L 84.101562 0 L 84.101562 -1.695312 L 114.460938 -1.695312 L 114.460938 0 L 112.785156 -0.265625 L 131.21875 -117.046875 L 132.890625 -116.78125 L 132.890625 -115.089844 L 102.53125 -115.089844 L 102.53125 -116.78125 L 104.207031 -116.519531 L 96.855469 -70.015625 L 49.59375 -70.015625 Z M 57.027344 -117.046875 "/></g></g></g></g><g><g fill="currentColor"><g transform="translate(121.807856, 128.481199)"><g><path d="M 60.375 -116.519531 L 52.785156 -68.351562 L 51.113281 -68.613281 L 51.113281 -70.308594 L 51.421875 -70.308594 L 51.421875 -68.613281 L 50.175781 -69.761719 L 94.972656 -118.476562 L 137.4375 -118.476562 L 79.414062 -60.292969 L 78.214844 -61.488281 L 79.625 -62.425781 L 122.265625 1.695312 L 78.816406 1.695312 L 47.191406 -49.761719 L 48.632812 -50.648438 L 48.632812 -48.953125 L 48.324219 -48.953125 L 48.324219 -50.648438 L 49.996094 -50.382812 L 41.714844 1.695312 L 7.929688 1.695312 L 26.894531 -118.476562 L 60.683594 -118.476562 Z M 57.027344 -117.046875 L 58.699219 -116.78125 L 58.699219 -115.089844 L 28.34375 -115.089844 L 28.34375 -116.78125 L 30.015625 -116.519531 L 11.585938 0.265625 L 9.914062 0 L 9.914062 -1.695312 L 40.269531 -1.695312 L 40.269531 0 L 38.597656 -0.265625 L 46.878906 -52.339844 L 49.582031 -52.339844 L 81.207031 -0.886719 L 79.765625 0 L 79.765625 -1.695312 L 119.105469 -1.695312 L 119.105469 0 L 117.695312 0.9375 L 76.039062 -61.703125 L 132.15625 -117.980469 L 133.355469 -116.78125 L 133.355469 -115.089844 L 95.71875 -115.089844 L 95.71875 -116.78125 L 96.964844 -115.636719 L 52.164062 -66.917969 L 49.128906 -66.917969 Z M 57.027344 -117.046875 "/></g></g></g></g></g><g transform="matrix(1, 0, 0, 1, 51, 109)"><g><g fill="currentColor"><g transform="translate(0.980068, 128.481199)"><g><path d="M 71.09375 -116.78125 L 85.03125 -54.359375 L 119.890625 -116.78125 L 150.09375 -116.78125 L 149.3125 0 L 118.953125 0 L 121.125 -67.21875 L 120.8125 -67.21875 L 82.09375 0 L 70.015625 0 L 53.90625 -67.21875 L 53.59375 -67.21875 L 33.140625 0 L 2.9375 0 L 41.203125 -116.78125 Z M 71.09375 -116.78125 "/></g></g></g><g fill="currentColor"><g transform="translate(149.823093, 128.481199)"><g><path d="M 58.703125 -116.78125 L 40.265625 0 L 9.90625 0 L 28.34375 -116.78125 Z M 58.703125 -116.78125 "/></g></g></g><g fill="currentColor"><g transform="translate(196.597884, 128.481199)"><g><path d="M 68.46875 -119.890625 C 80.957031 -119.890625 92.675781 -116.6875 103.625 -110.28125 L 87.828125 -86.734375 C 82.347656 -91.898438 76.046875 -94.484375 68.921875 -94.484375 C 65.203125 -94.484375 61.820312 -93.421875 58.78125 -91.296875 C 55.738281 -89.179688 54.21875 -86.578125 54.21875 -83.484375 C 54.21875 -81.210938 55.300781 -79.222656 57.46875 -77.515625 C 59.632812 -75.816406 63.609375 -74.140625 69.390625 -72.484375 C 77.234375 -70.109375 82.910156 -67.8125 86.421875 -65.59375 C 89.929688 -63.375 92.664062 -60.640625 94.625 -57.390625 C 96.59375 -54.140625 97.578125 -50.085938 97.578125 -45.234375 C 97.578125 -38.210938 95.769531 -30.773438 92.15625 -22.921875 C 88.539062 -15.078125 82.628906 -8.832031 74.421875 -4.1875 C 66.210938 0.457031 56.484375 2.882812 45.234375 3.09375 C 30.773438 3.09375 17.765625 -1.34375 6.203125 -10.21875 L 23.078125 -34.703125 C 31.128906 -26.640625 39.441406 -22.609375 48.015625 -22.609375 C 52.765625 -22.609375 56.765625 -23.847656 60.015625 -26.328125 C 63.273438 -28.804688 64.90625 -31.957031 64.90625 -35.78125 C 64.90625 -40.738281 59.945312 -44.554688 50.03125 -47.234375 C 38.050781 -50.546875 30.304688 -54.082031 26.796875 -57.84375 C 23.285156 -61.613281 21.53125 -66.648438 21.53125 -72.953125 C 21.53125 -86.171875 26.046875 -97.296875 35.078125 -106.328125 C 44.117188 -115.367188 55.25 -119.890625 68.46875 -119.890625 Z M 68.46875 -119.890625 "/></g></g></g><g fill="currentColor"><g transform="translate(285.655889, 128.481199)"><g><path d="M 99.90625 -116.78125 L 95.875 -91.078125 L 70.78125 -91.078125 L 56.375 0 L 26.015625 0 L 40.421875 -91.078125 L 15.328125 -91.078125 L 19.359375 -116.78125 Z M 99.90625 -116.78125 "/></g></g></g><g fill="currentColor"><g transform="translate(349.312966, 128.481199)"><g><path d="M 47.390625 -18.125 C 47.390625 -12.445312 45.195312 -7.488281 40.8125 -3.25 C 36.425781 0.976562 31.546875 3.09375 26.171875 3.09375 C 21.835938 3.09375 18.171875 1.648438 15.171875 -1.234375 C 12.179688 -4.128906 10.6875 -7.847656 10.6875 -12.390625 C 10.6875 -17.960938 12.878906 -22.8125 17.265625 -26.9375 C 21.660156 -31.070312 26.539062 -33.140625 31.90625 -33.140625 C 36.34375 -33.140625 40.03125 -31.71875 42.96875 -28.875 C 45.914062 -26.039062 47.390625 -22.457031 47.390625 -18.125 Z M 47.390625 -18.125 "/></g></g></g></g></g></svg>
-    </a>
+    <a href="#" class="logo" aria-label="Mist.hk"></a>
     <ul class="nav-links">
-      <li><a href="#why" data-i18n="nav.why">選用DBA冷風機</a></li>
-      <li><a href="#products" data-i18n="nav.products">產品</a></li>
-      <li><a href="#apps" data-i18n="nav.apps">應用場景</a></li>
-      <li><a href="#faq" data-i18n="nav.faq">常見問題</a></li>
-      <li><a href="#contact" class="nav-cta" data-i18n="nav.cta">索取報價</a></li>
+      <li><a href="#performance" data-i18n="nav.why">效能</a></li>
+      <li><a href="#fleet" data-i18n="nav.products">型號</a></li>
+      <li><a href="#engineering" data-i18n="nav.engineering">原理</a></li>
+      <li><a href="#applications" data-i18n="nav.apps">應用</a></li>
+      <li><a href="#faq" data-i18n="nav.faq">問題</a></li>
+      <li><a href="#contact" class="nav-cta" data-i18n="nav.cta">索取報價 →</a></li>
       <li><button type="button" class="lang-toggle" onclick="toggleLang()" aria-label="Toggle language">EN</button></li>
     </ul>
     <button class="nav-mobile-btn" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
   <ul class="mobile-nav" id="mobileNav">
-    <li><a href="#why" onclick="toggleNav()" data-i18n="nav.why">選用DBA冷風機</a></li>
-    <li><a href="#products" onclick="toggleNav()" data-i18n="nav.products">產品</a></li>
-    <li><a href="#apps" onclick="toggleNav()" data-i18n="nav.apps">應用場景</a></li>
-    <li><a href="#faq" onclick="toggleNav()" data-i18n="nav.faq">常見問題</a></li>
+    <li><a href="#performance" onclick="toggleNav()" data-i18n="nav.why">效能</a></li>
+    <li><a href="#fleet" onclick="toggleNav()" data-i18n="nav.products">型號</a></li>
+    <li><a href="#engineering" onclick="toggleNav()" data-i18n="nav.engineering">原理</a></li>
+    <li><a href="#applications" onclick="toggleNav()" data-i18n="nav.apps">應用</a></li>
+    <li><a href="#faq" onclick="toggleNav()" data-i18n="nav.faq">問題</a></li>
     <li><a href="#contact" onclick="toggleNav()" data-i18n="footer.contact">聯絡我們</a></li>
     <li><button type="button" class="lang-toggle" onclick="toggleLang(); toggleNav()">EN</button></li>
   </ul>
 </nav>
 
-<!-- HERO -->
+<!-- ============ HERO ============ -->
 <section class="hero">
-  <div class="hero-inner">
-    <div>
-      <div class="hero-eyebrow"><span class="pulse"></span> <span data-i18n="hero.eyebrow">香港 · 自然清涼</span></div>
+  <div class="hero-grid">
+    <div class="hero-left">
+      <div class="chap-mark">
+        <span class="chap-tick"></span>
+        <span data-i18n="hero.eyebrow">香港 · 蒸發式降溫</span>
+      </div>
       <h1 class="hero-title" data-i18n-html="hero.title.html">
         清新空氣，<br><em>自然</em>清涼。
       </h1>
       <p class="hero-sub" data-i18n="hero.sub">
         為香港住宅、辦公室、工場及倉庫提供蒸發式冷風機與工業風扇。舒適清涼之餘，能源消耗只是傳統冷氣的兩成 — 無需密閉空間或雪種。
       </p>
-      <div class="hero-cta-row">
-        <a href="#products" class="btn btn-primary" data-i18n-html="hero.cta1.html">瀏覽產品 <span class="arrow">→</span></a>
-        <a href="#contact" class="btn btn-secondary" data-i18n="hero.cta2">聯絡我們</a>
+
+      <div class="hero-range" aria-label="Airflow range">
+        <div class="range-rule"></div>
+        <div class="range-data">
+          <div class="range-lbl" data-i18n="hero.range.lbl">AIRFLOW RANGE · CMH</div>
+          <div class="range-nums">
+            <span class="range-from">1,500</span>
+            <span class="range-sep">━━</span>
+            <span class="range-to">38,000</span>
+          </div>
+          <div class="range-foot">
+            <span data-i18n="hero.range.from.lbl">PERSONAL</span>
+            <span data-i18n="hero.range.to.lbl">INDUSTRIAL</span>
+          </div>
+        </div>
       </div>
-      <div class="hero-stats">
-        <div class="hero-stat"><div class="num">10<span></span></div><div class="label" data-i18n="hero.stat1">系列型號</div></div>
-        <div class="hero-stat"><div class="num">38,000</div><div class="label" data-i18n="hero.stat2">最高風量 (m³/h)</div></div>
-        <div class="hero-stat"><div class="num">80<span>%</span></div><div class="label" data-i18n="hero.stat3">較冷氣節能</div></div>
+
+      <div class="hero-ctas">
+        <a href="#fleet" class="btn btn-primary" data-i18n-html="hero.cta1.html">瀏覽型號 →</a>
+        <a href="#contact" class="btn btn-ghost" data-i18n="hero.cta2">聯絡我們</a>
       </div>
     </div>
-    <div class="hero-visual">
-      <img src="images/debi002c-h-white-1.jpg" alt="Mist.hk evaporative air cooler" />
-      <div class="hero-tag">
-        <div class="hero-tag-l" data-i18n-html="hero.feat.html">主打 · 商用<strong>DEBI002C-H · 9,000 CMH</strong></div>
-        <a href="products/debi002c-h-white.html" class="hero-tag-r" data-i18n="hero.view">查看 →</a>
+
+    <div class="hero-right">
+      <div class="hero-product" data-airflow="active">
+        <div class="airflow-rings"><span></span><span></span><span></span></div>
+        <img src="images/debi002c-h-white-1.jpg" alt="Mist.hk DEBI002C-H 蒸發式冷風機 9,000 CMH" loading="eager" />
+      </div>
+      <div class="hero-spec-card">
+        <div class="hsc-row">
+          <span class="hsc-eyebrow" data-i18n="hero.feat.lbl">FEATURED · COMMERCIAL</span>
+          <span class="hsc-status">● IN STOCK</span>
+        </div>
+        <div class="hsc-sku">DEBI002C-H</div>
+        <div class="hsc-stats">
+          <div class="hsc-stat">
+            <span class="hsc-num">9,000</span>
+            <span class="hsc-lbl">m³/h</span>
+          </div>
+          <div class="hsc-stat">
+            <span class="hsc-num">1,000</span>
+            <span class="hsc-lbl">sq ft</span>
+          </div>
+          <div class="hsc-stat">
+            <span class="hsc-num">400</span>
+            <span class="hsc-lbl">W</span>
+          </div>
+          <div class="hsc-stat">
+            <span class="hsc-num">56</span>
+            <span class="hsc-lbl">dB(A)</span>
+          </div>
+        </div>
+        <a href="products/debi002c-h-white.html" class="hsc-link" data-i18n="hero.view">View spec sheet →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- WHY EVAPORATIVE -->
-<section class="why" id="why">
-  <div class="why-inner">
-    <div class="section-head reveal">
-      <div class="section-eyebrow" data-i18n="why.eyebrow">選用DBA冷風機</div>
-      <h2 class="section-title" data-i18n-html="why.title.html">一種更<em>天然</em>的降溫方式。</h2>
-      <p class="section-sub" data-i18n="why.sub">
-        空氣通過浸滿水的蜂窩濾網時，水分蒸發帶走熱量，吹出 5–12°C 的清涼空氣。無壓縮機、無雪種、無需密閉空間。
-      </p>
+<!-- ============ STAT RIBBON ============ -->
+<section class="stat-ribbon" aria-label="Key fleet stats">
+  <div class="sr-cell">
+    <div class="sr-num">10</div>
+    <div class="sr-lbl" data-i18n="hero.stat1">系列型號</div>
+  </div>
+  <div class="sr-divider"></div>
+  <div class="sr-cell">
+    <div class="sr-num">38,000</div>
+    <div class="sr-lbl" data-i18n="hero.stat2">最高風量 m³/h</div>
+  </div>
+  <div class="sr-divider"></div>
+  <div class="sr-cell">
+    <div class="sr-num">80<i>%</i></div>
+    <div class="sr-lbl" data-i18n="hero.stat3">較冷氣節能</div>
+  </div>
+  <div class="sr-divider"></div>
+  <div class="sr-cell">
+    <div class="sr-num">5–12<i>°C</i></div>
+    <div class="sr-lbl" data-i18n="hero.stat4">自然降溫</div>
+  </div>
+</section>
+
+<!-- ============ 01 — PERFORMANCE ============ -->
+<section class="chapter" id="performance">
+  <div class="chapter-inner">
+    <div class="chapter-head">
+      <div class="ch-no">01</div>
+      <div class="ch-meta">
+        <div class="ch-tag" data-i18n="why.eyebrow">PERFORMANCE</div>
+        <h2 class="ch-title" data-i18n-html="why.title.html">一種更<em>天然</em>的降溫方式。</h2>
+        <p class="ch-sub" data-i18n="why.sub">
+          空氣通過浸滿水的蜂窩濾網時，水分蒸發帶走熱量，吹出 5–12°C 的清涼空氣。無壓縮機、無雪種、無需密閉空間。
+        </p>
+      </div>
     </div>
 
-    <div class="why-grid">
-      <div class="why-card reveal">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M12 2v20M4.93 6 19.07 18M19.07 6 4.93 18"/>
-            <path d="M12 5.5 9.5 3M12 5.5 14.5 3M12 18.5 9.5 21M12 18.5 14.5 21"/>
-            <path d="M5.5 8.5 2.5 9.3M5.5 15.5 2.5 14.7M18.5 8.5 21.5 9.3M18.5 15.5 21.5 14.7"/>
-          </svg>
-        </div>
+    <div class="perf-grid">
+      <div class="perf-card reveal">
+        <div class="perf-num">12<sup>°C</sup></div>
         <h3 data-i18n="why.c1.title">降溫達 12°C</h3>
         <p data-i18n="why.c1.body">蒸發過程直接從氣流帶走熱量 — 降溫但不會「冷震」整個房間。</p>
       </div>
-      <div class="why-card reveal">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z" fill="currentColor" fill-opacity=".12"/>
-          </svg>
-        </div>
+      <div class="perf-card reveal">
+        <div class="perf-num">80<sup>%</sup></div>
         <h3 data-i18n="why.c2.title">節能 80%</h3>
         <p data-i18n="why.c2.body">1,500 CMH 機種僅需約 65W；即使 18,000 CMH 旗艦機，耗電亦遠低於分體式冷氣。</p>
       </div>
-      <div class="why-card reveal">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M3 7h11a3 3 0 1 0-3-3"/>
-            <path d="M3 12h16a3 3 0 1 1-3 3"/>
-            <path d="M3 17h9"/>
-          </svg>
-        </div>
-        <h3 data-i18n="why.c3.title">永遠新鮮空氣</h3>
+      <div class="perf-card reveal">
+        <div class="perf-num">0<sup>kg</sup></div>
+        <h3 data-i18n="why.c3.title">無雪種・無壓縮機</h3>
         <p data-i18n="why.c3.body">為開放空間而設。門窗可常開 — 空氣持續流動，不再循環悶熱。</p>
       </div>
-      <div class="why-card reveal">
-        <div class="why-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M3 6h11v10H3z"/>
-            <path d="M14 9h4l3 3v4h-7z"/>
-            <circle cx="7" cy="18" r="2"/>
-            <circle cx="17" cy="18" r="2"/>
-          </svg>
-        </div>
-        <h3 data-i18n="why.c4.title">全港免費送貨</h3>
+      <div class="perf-card reveal">
+        <div class="perf-num">24<sup>h</sup></div>
+        <h3 data-i18n="why.c4.title">全港即日送貨</h3>
         <p data-i18n="why.c4.body">港九新界即日送貨，每部產品享一年保用。</p>
+      </div>
+    </div>
+
+    <div class="vs-aircon reveal">
+      <div class="vs-head">
+        <div class="vs-tag" data-i18n="vs.tag">VS AIR-CONDITIONING</div>
+        <h3 data-i18n="vs.title">以 9,000 CMH 商用機 vs 1.5 匹分體冷氣計算 (每日 8 小時)</h3>
+      </div>
+      <div class="vs-rows">
+        <div class="vs-row">
+          <div class="vs-side">
+            <div class="vs-side-lbl" data-i18n="vs.ac">分體冷氣 1.5HP</div>
+            <div class="vs-bar"><span style="width:100%;background:#ff6b35"></span></div>
+            <div class="vs-val">1,200 W · HK$432/mo</div>
+          </div>
+        </div>
+        <div class="vs-row">
+          <div class="vs-side">
+            <div class="vs-side-lbl" data-i18n="vs.cooler">DEBI002C-H 冷風機</div>
+            <div class="vs-bar"><span style="width:33%"></span></div>
+            <div class="vs-val">400 W · HK$144/mo</div>
+          </div>
+        </div>
+      </div>
+      <div class="vs-savings">
+        <span class="vs-savings-num">HK$288<i>/月</i></span>
+        <span class="vs-savings-lbl" data-i18n="vs.savings">每月節省・以家用電費 $1.5/度計算</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PRODUCTS -->
-<section class="products" id="products">
-  <div class="products-inner">
-    <div class="section-head reveal">
-      <div class="section-eyebrow" data-i18n="products.eyebrow">產品</div>
-      <h2 class="section-title" data-i18n-html="products.title.html">完整<em>型號</em>系列。</h2>
-      <p class="section-sub" data-i18n="products.sub">由 1,500 CMH 個人小型機，到 38,000 CMH 工業旗艦級風扇。可按用途篩選。</p>
+<!-- ============ 02 — FLEET ============ -->
+<section class="chapter" id="fleet">
+  <div class="chapter-inner">
+    <div class="chapter-head">
+      <div class="ch-no">02</div>
+      <div class="ch-meta">
+        <div class="ch-tag" data-i18n="products.eyebrow">THE FLEET</div>
+        <h2 class="ch-title" data-i18n-html="products.title.html">10 款型號。<em>一個</em>平台。</h2>
+        <p class="ch-sub" data-i18n="products.sub">由 1,500 CMH 個人小型機，到 38,000 CMH 工業旗艦級風扇。可按用途篩選。</p>
+      </div>
     </div>
 
     <div class="cat-tabs" id="cat-tabs">
@@ -348,13 +426,86 @@
   </div>
 </section>
 
-<!-- APPLICATIONS -->
-<section class="apps" id="apps">
-  <div class="apps-inner">
-    <div class="section-head reveal">
-      <div class="section-eyebrow" data-i18n="apps.eyebrow">應用場景</div>
-      <h2 class="section-title" data-i18n-html="apps.title.html"><em>適用</em>場景。</h2>
-      <p class="section-sub" data-i18n="apps.sub">開放空間、半密閉場所或戶外場地 — 凡是冷氣難以運作或不切實際的環境。</p>
+<!-- ============ 03 — ENGINEERING ============ -->
+<section class="chapter chapter-eng" id="engineering">
+  <div class="chapter-inner">
+    <div class="chapter-head">
+      <div class="ch-no">03</div>
+      <div class="ch-meta">
+        <div class="ch-tag" data-i18n="eng.eyebrow">ENGINEERING</div>
+        <h2 class="ch-title" data-i18n-html="eng.title.html">點解<em>蒸發式</em>會降溫。</h2>
+        <p class="ch-sub" data-i18n="eng.sub">同濕毛巾貼喺額頭一個原理。水分由液態變氣態時吸收熱能（潛熱），帶走空氣中的熱量。蒸發式冷風機將呢個物理現象工業化。</p>
+      </div>
+    </div>
+
+    <div class="eng-diagram">
+      <div class="eng-step reveal">
+        <div class="eng-no">01</div>
+        <div class="eng-svg">
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+            <path d="M5 20 H60 M5 40 H50 M5 60 H55" stroke-linecap="round"/>
+            <path d="M60 20 L70 20 M50 40 L70 40 M55 60 L70 60" stroke-linecap="round"/>
+            <circle cx="68" cy="20" r="2" fill="currentColor"/>
+            <circle cx="68" cy="40" r="2" fill="currentColor"/>
+            <circle cx="68" cy="60" r="2" fill="currentColor"/>
+            <text x="5" y="78" font-family="Geist Mono, monospace" font-size="8" fill="currentColor">33°C · 80% RH</text>
+          </svg>
+        </div>
+        <h4 data-i18n="eng.s1.title">AIR IN</h4>
+        <p data-i18n="eng.s1.body">香港夏天嘅熱悶空氣由風扇吸入機身。33°C，相對濕度 80%。</p>
+      </div>
+
+      <div class="eng-arrow"><svg viewBox="0 0 60 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2 6 H56 M50 1 L56 6 L50 11" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+
+      <div class="eng-step reveal">
+        <div class="eng-no">02</div>
+        <div class="eng-svg">
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+            <pattern id="hex" x="0" y="0" width="12" height="14" patternUnits="userSpaceOnUse">
+              <path d="M6 0 L12 3.5 L12 10.5 L6 14 L0 10.5 L0 3.5 Z" stroke="currentColor" fill="none" stroke-width="0.8"/>
+            </pattern>
+            <rect x="10" y="10" width="60" height="60" fill="url(#hex)" stroke="currentColor"/>
+            <path d="M70 22 L74 22 M70 32 L74 32 M70 42 L74 42 M70 52 L74 52 M70 62 L74 62" stroke-linecap="round"/>
+            <text x="10" y="78" font-family="Geist Mono, monospace" font-size="8" fill="currentColor">H₂O → vapor (− heat)</text>
+          </svg>
+        </div>
+        <h4 data-i18n="eng.s2.title">HONEYCOMB PAD</h4>
+        <p data-i18n="eng.s2.body">蜂窩濾網由水泵持續灌水。空氣通過時，水分蒸發吸收熱量。</p>
+      </div>
+
+      <div class="eng-arrow"><svg viewBox="0 0 60 12" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M2 6 H56 M50 1 L56 6 L50 11" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+
+      <div class="eng-step reveal">
+        <div class="eng-no">03</div>
+        <div class="eng-svg">
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+            <path d="M10 20 H70 M10 30 H65 M10 40 H70 M10 50 H62 M10 60 H68" stroke-linecap="round"/>
+            <path d="M70 20 L65 17 M70 20 L65 23 M65 30 L60 27 M65 30 L60 33 M70 40 L65 37 M70 40 L65 43 M62 50 L57 47 M62 50 L57 53 M68 60 L63 57 M68 60 L63 63" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="10" y="78" font-family="Geist Mono, monospace" font-size="8" fill="currentColor">26°C · cool · fresh</text>
+          </svg>
+        </div>
+        <h4 data-i18n="eng.s3.title">COOL AIR OUT</h4>
+        <p data-i18n="eng.s3.body">降溫 5–12°C 嘅清涼空氣吹出。無水點，唔焗笠。</p>
+      </div>
+    </div>
+
+    <div class="eng-deepdive-row">
+      <a href="air-cooler.html" class="eng-link" data-i18n="eng.guide">完整冷風機指南 →</a>
+      <a href="cooler-vs-aircon.html" class="eng-link" data-i18n="eng.vs">冷風機 vs 冷氣機 →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 — APPLICATIONS ============ -->
+<section class="chapter chapter-apps" id="applications">
+  <div class="chapter-inner">
+    <div class="chapter-head">
+      <div class="ch-no">04</div>
+      <div class="ch-meta">
+        <div class="ch-tag" data-i18n="apps.eyebrow">APPLICATIONS</div>
+        <h2 class="ch-title" data-i18n-html="apps.title.html">凡是冷氣難以運作的<em>場景</em>。</h2>
+        <p class="ch-sub" data-i18n="apps.sub">開放空間、半密閉場所或戶外場地 — 凡是冷氣難以運作或不切實際的環境。</p>
+      </div>
     </div>
 
     <div class="apps-bento">
@@ -364,6 +515,7 @@
           <span class="badge" data-i18n="apps.warehouse.badge">工業</span>
           <h3 data-i18n="apps.warehouse.title">倉庫及工場</h3>
           <p data-i18n="apps.warehouse.body">高樓底、開放工作區、上落貨區。Mist 冷風機提供數千 CMH 風量，耗電卻只是冷氣的一小部分 — 更不需要密閉整座建築。</p>
+          <a href="industrial-cooler.html" class="app-link" data-i18n="apps.warehouse.link">工業冷風機指南 →</a>
         </div>
       </div>
       <div class="app-card tall reveal">
@@ -372,6 +524,7 @@
           <span class="badge" data-i18n="apps.fnb.badge">餐飲業</span>
           <h3 data-i18n="apps.fnb.title">戶外餐飲</h3>
           <p data-i18n="apps.fnb.body">酒吧、露台、點心場、美食廣場 — 為人群降溫，無需冷卻整片開放天空。</p>
+          <a href="outdoor-fnb-cooler.html" class="app-link" data-i18n="apps.fnb.link">餐飲冷風機指南 →</a>
         </div>
       </div>
       <div class="app-card std reveal">
@@ -407,13 +560,42 @@
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="faq" id="faq">
-  <div class="faq-inner">
-    <div class="section-head reveal">
-      <div class="section-eyebrow" data-i18n="faq.eyebrow">常見問題</div>
-      <h2 class="section-title" data-i18n-html="faq.title.html">關於<em>冷風機</em>，你想知嘅。</h2>
-      <p class="section-sub" data-i18n="faq.sub">點揀型號、同冷氣分別、香港潮濕點算 — 揀機之前最常問嘅幾條。</p>
+<!-- ============ 05 — LINEUP ============ -->
+<section class="chapter chapter-lineup" id="lineup">
+  <div class="chapter-inner">
+    <div class="chapter-head">
+      <div class="ch-no">05</div>
+      <div class="ch-meta">
+        <div class="ch-tag" data-i18n="lineup.eyebrow">LINEUP · SPEC SHEET</div>
+        <h2 class="ch-title" data-i18n-html="lineup.title.html">完整<em>規格</em>清單。</h2>
+        <p class="ch-sub" data-i18n="lineup.sub">所有冷風機與風扇型號一覽，按風量排序。按入查看完整規格。</p>
+      </div>
+    </div>
+
+    <div class="lineup-table">
+      <div class="lineup-head">
+        <div></div>
+        <div data-i18n="lineup.h.model">MODEL</div>
+        <div data-i18n="lineup.h.class">CLASS</div>
+        <div data-i18n="lineup.h.cmh">CMH</div>
+        <div data-i18n="lineup.h.area">COVERAGE</div>
+        <div></div>
+      </div>
+      <div id="lineup-rows"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 — FAQ ============ -->
+<section class="chapter chapter-faq" id="faq">
+  <div class="chapter-inner">
+    <div class="chapter-head">
+      <div class="ch-no">06</div>
+      <div class="ch-meta">
+        <div class="ch-tag" data-i18n="faq.eyebrow">QUESTIONS</div>
+        <h2 class="ch-title" data-i18n-html="faq.title.html">關於<em>冷風機</em>，你想知嘅。</h2>
+        <p class="ch-sub" data-i18n="faq.sub">點揀型號、同冷氣分別、香港潮濕點算 — 揀機之前最常問嘅幾條。</p>
+      </div>
     </div>
     <div class="faq-list">
       <details class="faq-item reveal">
@@ -448,94 +630,60 @@
   </div>
 </section>
 
-<!-- LINEUP -->
-<section class="lineup" id="lineup">
-  <div class="lineup-inner">
-    <div class="section-head reveal">
-      <div class="section-eyebrow" data-i18n="lineup.eyebrow">完整型號</div>
-      <h2 class="section-title" data-i18n-html="lineup.title.html">全部 <em>10</em> 款型號。</h2>
-      <p class="section-sub" data-i18n="lineup.sub">所有冷風機與風扇型號一覽，按風量排序，按入查看完整規格。</p>
-    </div>
-
-    <div class="lineup-table">
-      <div class="lineup-head">
-        <div></div>
-        <div data-i18n="lineup.h.model">型號</div>
-        <div data-i18n="lineup.h.class">類別</div>
-        <div data-i18n="lineup.h.cmh">風量</div>
-        <div data-i18n="lineup.h.area">覆蓋面積</div>
-        <div></div>
+<!-- ============ 07 — CONTACT ============ -->
+<section class="chapter chapter-contact" id="contact">
+  <div class="chapter-inner">
+    <div class="chapter-head">
+      <div class="ch-no">07</div>
+      <div class="ch-meta">
+        <div class="ch-tag" data-i18n="contact.eyebrow">CONTACT</div>
+        <h2 class="ch-title" data-i18n-html="contact.title.html"><em>聯絡</em>我們。</h2>
+        <p class="ch-sub" data-i18n="contact.sub">買機、租機，或者想我們上門睇場？歡迎 WhatsApp 或來電。港九新界即日送貨，全機一年保用。</p>
       </div>
-      <div id="lineup-rows"></div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <div class="contact-inner">
-    <div class="contact-left reveal">
-      <h2 data-i18n-html="contact.title.html"><em>聯絡</em>我們。</h2>
-      <p data-i18n="contact.sub">
-        買機、租機，或者想我們上門睇場？歡迎 WhatsApp 或來電。港九新界即日送貨，全機一年保用。
-      </p>
     </div>
     <div class="contact-cards">
       <a href="tel:+85221210503" class="contact-card">
-        <div class="ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/>
-          </svg>
-        </div>
-        <div>
-          <div class="label" data-i18n="contact.phone">電話</div>
-          <div class="value">+852 2121 0503</div>
-        </div>
+        <div class="cc-eyebrow" data-i18n="contact.phone">電話</div>
+        <div class="cc-value">+852 2121 0503</div>
+        <div class="cc-arrow">→</div>
       </a>
       <a href="https://wa.me/85284043880" class="contact-card" target="_blank" rel="noopener">
-        <div class="ico">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91a9.83 9.83 0 0 0-2.91-7.01zM12.04 20.15h-.01a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.21 8.21 0 0 1-1.26-4.39c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.16 0-.43.06-.66.31-.23.25-.86.84-.86 2.05 0 1.21.88 2.38 1.01 2.55.12.16 1.74 2.65 4.21 3.72.59.25 1.04.4 1.4.52.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.29z"/>
-          </svg>
-        </div>
-        <div>
-          <div class="label">WhatsApp</div>
-          <div class="value">+852 8404 3880</div>
-        </div>
+        <div class="cc-eyebrow">WhatsApp</div>
+        <div class="cc-value">+852 8404 3880</div>
+        <div class="cc-arrow">→</div>
       </a>
       <a href="mailto:info@mist.hk" class="contact-card">
-        <div class="ico">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="3" y="5" width="18" height="14" rx="2.5"/>
-            <path d="m3.5 7 8.5 6 8.5-6"/>
-          </svg>
-        </div>
-        <div>
-          <div class="label" data-i18n="contact.email">電郵</div>
-          <div class="value">info@mist.hk</div>
-        </div>
+        <div class="cc-eyebrow" data-i18n="contact.email">電郵</div>
+        <div class="cc-value">info@mist.hk</div>
+        <div class="cc-arrow">→</div>
       </a>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ============ FOOTER ============ -->
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
-      <a href="#" class="logo" aria-label="Mist.hk">
-        <svg aria-label="MIST.HK" xmlns="http://www.w3.org/2000/svg" viewBox="40 105 685 145" preserveAspectRatio="xMidYMid meet"><g transform="matrix(1, 0, 0, 1, 456, 109)"><g><g fill="currentColor"><g transform="translate(0.843875, 128.481199)"><g><path d="M 60.375 -116.519531 L 53.25 -71.445312 L 51.578125 -71.710938 L 51.578125 -73.40625 L 95.410156 -73.40625 L 95.410156 -71.710938 L 93.734375 -71.976562 L 101.085938 -118.476562 L 134.871094 -118.476562 L 115.90625 1.695312 L 82.117188 1.695312 L 90.019531 -48.125 L 91.691406 -47.859375 L 91.691406 -46.164062 L 47.859375 -46.164062 L 47.859375 -47.859375 L 49.53125 -47.59375 L 41.714844 1.695312 L 7.929688 1.695312 L 26.894531 -118.476562 L 60.683594 -118.476562 Z M 57.027344 -117.046875 L 58.699219 -116.78125 L 58.699219 -115.089844 L 28.34375 -115.089844 L 28.34375 -116.78125 L 30.015625 -116.519531 L 11.585938 0.265625 L 9.914062 0 L 9.914062 -1.695312 L 40.269531 -1.695312 L 40.269531 0 L 38.597656 -0.265625 L 46.414062 -49.554688 L 93.675781 -49.554688 L 85.773438 0.265625 L 84.101562 0 L 84.101562 -1.695312 L 114.460938 -1.695312 L 114.460938 0 L 112.785156 -0.265625 L 131.21875 -117.046875 L 132.890625 -116.78125 L 132.890625 -115.089844 L 102.53125 -115.089844 L 102.53125 -116.78125 L 104.207031 -116.519531 L 96.855469 -70.015625 L 49.59375 -70.015625 Z M 57.027344 -117.046875 "/></g></g></g></g><g><g fill="currentColor"><g transform="translate(121.807856, 128.481199)"><g><path d="M 60.375 -116.519531 L 52.785156 -68.351562 L 51.113281 -68.613281 L 51.113281 -70.308594 L 51.421875 -70.308594 L 51.421875 -68.613281 L 50.175781 -69.761719 L 94.972656 -118.476562 L 137.4375 -118.476562 L 79.414062 -60.292969 L 78.214844 -61.488281 L 79.625 -62.425781 L 122.265625 1.695312 L 78.816406 1.695312 L 47.191406 -49.761719 L 48.632812 -50.648438 L 48.632812 -48.953125 L 48.324219 -48.953125 L 48.324219 -50.648438 L 49.996094 -50.382812 L 41.714844 1.695312 L 7.929688 1.695312 L 26.894531 -118.476562 L 60.683594 -118.476562 Z M 57.027344 -117.046875 L 58.699219 -116.78125 L 58.699219 -115.089844 L 28.34375 -115.089844 L 28.34375 -116.78125 L 30.015625 -116.519531 L 11.585938 0.265625 L 9.914062 0 L 9.914062 -1.695312 L 40.269531 -1.695312 L 40.269531 0 L 38.597656 -0.265625 L 46.878906 -52.339844 L 49.582031 -52.339844 L 81.207031 -0.886719 L 79.765625 0 L 79.765625 -1.695312 L 119.105469 -1.695312 L 119.105469 0 L 117.695312 0.9375 L 76.039062 -61.703125 L 132.15625 -117.980469 L 133.355469 -116.78125 L 133.355469 -115.089844 L 95.71875 -115.089844 L 95.71875 -116.78125 L 96.964844 -115.636719 L 52.164062 -66.917969 L 49.128906 -66.917969 Z M 57.027344 -117.046875 "/></g></g></g></g></g><g transform="matrix(1, 0, 0, 1, 51, 109)"><g><g fill="currentColor"><g transform="translate(0.980068, 128.481199)"><g><path d="M 71.09375 -116.78125 L 85.03125 -54.359375 L 119.890625 -116.78125 L 150.09375 -116.78125 L 149.3125 0 L 118.953125 0 L 121.125 -67.21875 L 120.8125 -67.21875 L 82.09375 0 L 70.015625 0 L 53.90625 -67.21875 L 53.59375 -67.21875 L 33.140625 0 L 2.9375 0 L 41.203125 -116.78125 Z M 71.09375 -116.78125 "/></g></g></g><g fill="currentColor"><g transform="translate(149.823093, 128.481199)"><g><path d="M 58.703125 -116.78125 L 40.265625 0 L 9.90625 0 L 28.34375 -116.78125 Z M 58.703125 -116.78125 "/></g></g></g><g fill="currentColor"><g transform="translate(196.597884, 128.481199)"><g><path d="M 68.46875 -119.890625 C 80.957031 -119.890625 92.675781 -116.6875 103.625 -110.28125 L 87.828125 -86.734375 C 82.347656 -91.898438 76.046875 -94.484375 68.921875 -94.484375 C 65.203125 -94.484375 61.820312 -93.421875 58.78125 -91.296875 C 55.738281 -89.179688 54.21875 -86.578125 54.21875 -83.484375 C 54.21875 -81.210938 55.300781 -79.222656 57.46875 -77.515625 C 59.632812 -75.816406 63.609375 -74.140625 69.390625 -72.484375 C 77.234375 -70.109375 82.910156 -67.8125 86.421875 -65.59375 C 89.929688 -63.375 92.664062 -60.640625 94.625 -57.390625 C 96.59375 -54.140625 97.578125 -50.085938 97.578125 -45.234375 C 97.578125 -38.210938 95.769531 -30.773438 92.15625 -22.921875 C 88.539062 -15.078125 82.628906 -8.832031 74.421875 -4.1875 C 66.210938 0.457031 56.484375 2.882812 45.234375 3.09375 C 30.773438 3.09375 17.765625 -1.34375 6.203125 -10.21875 L 23.078125 -34.703125 C 31.128906 -26.640625 39.441406 -22.609375 48.015625 -22.609375 C 52.765625 -22.609375 56.765625 -23.847656 60.015625 -26.328125 C 63.273438 -28.804688 64.90625 -31.957031 64.90625 -35.78125 C 64.90625 -40.738281 59.945312 -44.554688 50.03125 -47.234375 C 38.050781 -50.546875 30.304688 -54.082031 26.796875 -57.84375 C 23.285156 -61.613281 21.53125 -66.648438 21.53125 -72.953125 C 21.53125 -86.171875 26.046875 -97.296875 35.078125 -106.328125 C 44.117188 -115.367188 55.25 -119.890625 68.46875 -119.890625 Z M 68.46875 -119.890625 "/></g></g></g><g fill="currentColor"><g transform="translate(285.655889, 128.481199)"><g><path d="M 99.90625 -116.78125 L 95.875 -91.078125 L 70.78125 -91.078125 L 56.375 0 L 26.015625 0 L 40.421875 -91.078125 L 15.328125 -91.078125 L 19.359375 -116.78125 Z M 99.90625 -116.78125 "/></g></g></g><g fill="currentColor"><g transform="translate(349.312966, 128.481199)"><g><path d="M 47.390625 -18.125 C 47.390625 -12.445312 45.195312 -7.488281 40.8125 -3.25 C 36.425781 0.976562 31.546875 3.09375 26.171875 3.09375 C 21.835938 3.09375 18.171875 1.648438 15.171875 -1.234375 C 12.179688 -4.128906 10.6875 -7.847656 10.6875 -12.390625 C 10.6875 -17.960938 12.878906 -22.8125 17.265625 -26.9375 C 21.660156 -31.070312 26.539062 -33.140625 31.90625 -33.140625 C 36.34375 -33.140625 40.03125 -31.71875 42.96875 -28.875 C 45.914062 -26.039062 47.390625 -22.457031 47.390625 -18.125 Z M 47.390625 -18.125 "/></g></g></g></g></g></svg>
-      </a>
+      <a href="#" class="logo" aria-label="Mist.hk"></a>
       <p data-i18n="footer.brand">為香港提供蒸發式冷風機與工業風扇。為住宅、辦公室及商業空間帶來自然清涼。</p>
     </div>
     <div class="footer-col">
       <h5 data-i18n="footer.browse">瀏覽</h5>
       <ul>
-        <li><a href="#products" data-i18n="footer.f.coolers">蒸發式冷風機</a></li>
-        <li><a href="#products" data-i18n="footer.f.fans">工業風扇</a></li>
-        <li><a href="#lineup" data-i18n="footer.f.lineup">完整型號清單</a></li>
-        <li><a href="#apps" data-i18n="footer.f.apps">應用場景</a></li>
+        <li><a href="#fleet" data-i18n="footer.f.coolers">蒸發式冷風機</a></li>
+        <li><a href="#fleet" data-i18n="footer.f.fans">工業風扇</a></li>
+        <li><a href="#lineup" data-i18n="footer.f.lineup">完整規格</a></li>
+        <li><a href="#applications" data-i18n="footer.f.apps">應用場景</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="footer.guides">指南</h5>
+      <ul>
         <li><a href="air-cooler.html" data-i18n="footer.f.guide">冷風機選購指南</a></li>
+        <li><a href="cooler-vs-aircon.html">冷風機 vs 冷氣機</a></li>
+        <li><a href="industrial-cooler.html">工業冷風機</a></li>
+        <li><a href="outdoor-fnb-cooler.html">戶外餐飲冷風機</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -548,8 +696,12 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <div>© <span id="yr">2026</span> MIST.HK</div>
-    <div>mist.hk · mist.com.hk · hkmist.com</div>
+    <div class="fb-left">
+      <span>© <span id="yr">2026</span> MIST.HK</span>
+      <span class="fb-sep">·</span>
+      <span class="fb-distributor" data-i18n="footer.distributor">DBA 迪比亞 香港產品分銷商</span>
+    </div>
+    <div class="fb-right">mist.hk · mist.com.hk · hkmist.com</div>
   </div>
 </footer>
 
