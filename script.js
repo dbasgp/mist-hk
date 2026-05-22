@@ -39,14 +39,15 @@ const PRODUCTS = [
 /* ========= I18N DICTIONARY ========= */
 const T = {
   zh: {
-    'meta.title': 'Mist.hk — 蒸發式冷風機與工業風扇 · 香港',
-    'meta.desc': '為香港住宅、辦公室、工場及倉庫提供蒸發式冷風機與工業風扇。風量由 1,500 至 38,000 CMH，比傳統冷氣節能 80%，免費送貨上門，一年保用。',
+    'meta.title': '冷風機 香港 | 蒸發式冷風機・室外冷風機・工業風扇 — Mist.hk',
+    'meta.desc': 'Mist.hk 香港冷風機專門店：10 款蒸發式冷風機與工業風扇，由個人 1,500 CMH 到工業旗艦 38,000 CMH。自然降溫 5–12°C，較冷氣節能 80%。室外、商用、工業適用，全港即日送貨，一年保用。',
     'lang.toggle': 'EN',
 
     'nav.why': '選用DBA冷風機',
     'nav.products': '產品',
     'nav.apps': '應用場景',
     'nav.lineup': '完整型號',
+    'nav.faq': '常見問題',
     'nav.cta': '索取報價',
 
     'hero.eyebrow': '香港 · 自然清涼',
@@ -115,6 +116,24 @@ const T = {
     'card.viewSpecs': '查看規格',
     'card.fanText': '工業風扇 · 純風量',
 
+    'faq.eyebrow': '常見問題',
+    'faq.title.html': '關於<em>冷風機</em>，你想知嘅。',
+    'faq.sub': '點揀型號、同冷氣分別、香港潮濕點算 — 揀機之前最常問嘅幾條。',
+    'faq.q1': '冷風機真係降溫嗎？',
+    'faq.a1': '係。蒸發式冷風機透過水分蒸發吸熱原理，可將空氣溫度降低 5–12°C。原理同濕毛巾貼喺額頭一樣，水分蒸發時帶走熱量，自然降溫。',
+    'faq.q2': '冷風機同冷氣機有咩分別？',
+    'faq.a2': '冷氣機用壓縮機與雪種，需要密閉空間，耗電大；冷風機只靠水分蒸發，無壓縮機、無雪種，門窗可以照常打開，耗電量約為冷氣機的兩成。冷風機適合開放或半開放空間，例如倉庫、戶外餐飲、活動場地。',
+    'faq.q3': '香港咁潮濕，冷風機都會有效嗎？',
+    'faq.a3': '有效。香港夏天平均濕度約 80%，在這環境下冷風機仍可降溫 3–6°C，配合大風量設計，體感涼快效果非常明顯。較乾燥的日子降溫幅度可達 8–12°C。',
+    'faq.q4': '冷風機點揀型號？',
+    'faq.a4': '主要按面積選風量：個人單位選 1,500–4,000 CMH；一般家居 4,000–9,000 CMH；商鋪或餐廳 9,000–12,000 CMH；倉庫工場 18,000 CMH 或以上。一般每 1,000 CMH 對應約 100 平方呎覆蓋面積。',
+    'faq.q5': '冷風機需要安裝嗎？',
+    'faq.a5': '唔需要。所有型號均為流動式設計，附腳輪，到貨即用 — 入水、插電即開機。亦可選擇接駁水喉自動補水，免去手動加水。',
+    'faq.q6': '冷風機可以用喺戶外嗎？',
+    'faq.a6': '可以。蒸發式冷風機本身就是為開放或半開放空間而設，露台、戶外餐飲、活動場地、倉庫卸貨區都係常見應用。建議選擇覆蓋面積較大的商用或工業型號。',
+    'faq.q7': '冷風機價錢點計？',
+    'faq.a7': '由個人型 HK$2,000 起，到旗艦工業型 HK$15,000+。歡迎 WhatsApp +852 8404 3880 或致電 +852 2121 0503 報價，我們會按用途及場地面積建議合適型號。',
+
     'contact.title.html': '<em>聯絡</em>我們。',
     'contact.sub': '買機、租機，或者想我們上門睇場？歡迎 WhatsApp 或來電。港九新界即日送貨，全機一年保用。',
     'contact.phone': '電話',
@@ -126,6 +145,7 @@ const T = {
     'footer.f.fans': '工業風扇',
     'footer.f.lineup': '完整型號清單',
     'footer.f.apps': '應用場景',
+    'footer.f.guide': '冷風機選購指南',
     'footer.contact': '聯絡我們',
 
     /* Product detail page */
@@ -157,14 +177,15 @@ const T = {
     'pd.spec.rentals.v': '提供',
   },
   en: {
-    'meta.title': 'Mist.hk — Evaporative Air Coolers & Industrial Fans',
-    'meta.desc': "Evaporative air coolers and industrial fans for Hong Kong — from 1,500 to 38,000 CMH airflow. Cool spaces up to 1,800 sq ft with 80% less energy than air-conditioning. Free HK delivery, 1-year warranty.",
+    'meta.title': 'Air Cooler Hong Kong | Evaporative & Industrial Fans — Mist.hk',
+    'meta.desc': "Hong Kong air cooler specialist: 10 evaporative air coolers and industrial fans, 1,500 to 38,000 CMH airflow. 5–12°C natural cooling, 80% less energy than A/C. Outdoor, commercial & industrial. Same-day HK delivery, 1-year warranty.",
     'lang.toggle': '繁',
 
     'nav.why': 'Why DBA',
     'nav.products': 'Products',
     'nav.apps': 'Applications',
     'nav.lineup': 'Full lineup',
+    'nav.faq': 'FAQ',
     'nav.cta': 'Get a quote',
 
     'hero.eyebrow': 'Hong Kong · Cooling, naturally',
@@ -233,6 +254,24 @@ const T = {
     'card.viewSpecs': 'View specs',
     'card.fanText': 'Industrial fan · pure airflow',
 
+    'faq.eyebrow': 'FAQ',
+    'faq.title.html': 'Air cooler <em>questions</em>, answered.',
+    'faq.sub': 'Sizing, how it differs from A/C, whether it works in Hong Kong humidity — the things people ask before they buy.',
+    'faq.q1': 'Do air coolers actually cool the air?',
+    'faq.a1': 'Yes. Evaporative coolers drop air temperature 5–12°C through the same principle as a wet towel on your forehead — water absorbs heat as it evaporates. No refrigerant, no compressor.',
+    'faq.q2': 'How is an air cooler different from air-conditioning?',
+    'faq.a2': 'A/C uses a compressor and refrigerant in a sealed room — high power draw. An air cooler only evaporates water; doors and windows can stay open, and it runs on about 20% of the energy. Best for open or semi-open spaces: warehouses, outdoor F&B, event venues.',
+    'faq.q3': 'Does an air cooler work in Hong Kong humidity?',
+    'faq.a3': 'Yes. Summer humidity in HK averages ~80%, and units still deliver a 3–6°C drop in those conditions — with strong CMH airflow, the perceived cooling is significant. On drier days, you get the full 8–12°C.',
+    'faq.q4': 'How do I pick the right size?',
+    'faq.a4': 'By area: single rooms / studios 1,500–4,000 CMH; full homes 4,000–9,000 CMH; shops & restaurants 9,000–12,000 CMH; warehouses & factories 18,000 CMH and up. Roughly 1,000 CMH per 100 sq ft of coverage.',
+    'faq.q5': 'Does it need installation?',
+    'faq.a5': 'No. Every model is portable on castors — fill, plug in, switch on. Optional mains-water hookup if you don\'t want to refill manually.',
+    'faq.q6': 'Can I use it outdoors?',
+    'faq.a6': 'Yes — evaporative coolers were designed for open and semi-open spaces. Terraces, outdoor dining, event venues, warehouse loading bays. Larger commercial or industrial models work best outside.',
+    'faq.q7': 'How much does an air cooler cost?',
+    'faq.a7': 'From HK$2,000 for personal units up to HK$15,000+ for flagship industrial models. WhatsApp +852 8404 3880 or call +852 2121 0503 — we\'ll size and quote based on the space.',
+
     'contact.title.html': 'Get in <em>touch</em>.',
     'contact.sub': 'Buying, renting, or want us to look at the space? WhatsApp or call. Same-day delivery across Hong Kong, Kowloon, and the New Territories — one-year warranty on every unit.',
     'contact.phone': 'Phone',
@@ -244,6 +283,7 @@ const T = {
     'footer.f.fans': 'Industrial fans',
     'footer.f.lineup': 'Full SKU list',
     'footer.f.apps': 'Applications',
+    'footer.f.guide': 'Air cooler buying guide',
     'footer.contact': 'Get in touch',
 
     'pd.crumb.home': 'mist.hk',
