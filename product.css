@@ -61,7 +61,7 @@
 .gallery-cmh {
   position: absolute;
   top: 22px; left: 22px;
-  background: rgba(10, 13, 16, .85);
+  background: rgba(22, 27, 33, .85);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid var(--line);

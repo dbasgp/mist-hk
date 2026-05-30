@@ -27,16 +27,16 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
 
 /* ---------- Tokens ---------- */
 :root {
-  --bg: #0a0d10;
-  --surface-1: #12161a;
-  --surface-2: #1a1f24;
-  --surface-3: #22282f;
-  --line: #2a3138;
-  --line-soft: #1e242a;
-  --text: #f0f4f8;
-  --text-2: #9aa5b1;
-  --text-3: #5c6873;
-  --text-4: #3a434c;
+  --bg: #161b21;
+  --surface-1: #1c2229;
+  --surface-2: #242b33;
+  --surface-3: #2d3640;
+  --line: #39424c;
+  --line-soft: #262d35;
+  --text: #f2f5f9;
+  --text-2: #b4bdc7;
+  --text-3: #7a8693;
+  --text-4: #4b5663;
   --brand: #00e3f4;
   --brand-deep: #00a8b8;
   --brand-pale: rgba(0, 227, 244, 0.08);
@@ -81,7 +81,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   position: sticky;
   top: 0; z-index: 100;
   padding: 14px 32px;
-  background: rgba(10, 13, 16, 0.78);
+  background: rgba(22, 27, 33, 0.78);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 1px solid var(--line-soft);
@@ -968,7 +968,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 30%, rgba(10,13,16,.85) 100%);
+  background: linear-gradient(180deg, transparent 30%, rgba(22,27,33,.9) 100%);
   pointer-events: none;
 }
 .app-card.feature { grid-column: span 7; grid-row: span 2; }
