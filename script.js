@@ -174,7 +174,6 @@ const T = {
     'footer.f.apps': '應用場景',
     'footer.f.guide': '冷風機選購指南',
     'footer.contact': '聯絡我們',
-    'footer.distributor': 'DBA 迪比亞 香港產品分銷商',
 
     /* Product detail page */
     'pd.crumb.home': '首頁',
@@ -340,7 +339,6 @@ const T = {
     'footer.f.apps': 'Applications',
     'footer.f.guide': 'Air cooler guide',
     'footer.contact': 'Get in touch',
-    'footer.distributor': 'Hong Kong distributor for DBA',
 
     'pd.crumb.home': 'mist.hk',
     'pd.crumb.products': 'Products',

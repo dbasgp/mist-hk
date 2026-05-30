@@ -1,0 +1,19 @@
+{
+  "name": "Mist.hk",
+  "domains": ["www.mist.hk", "www.mist.com.hk", "www.hkmist.com"],
+  "primary_domain": "www.mist.hk",
+  "default_locale": "en",
+  "locales": ["en", "zh-Hant"],
+  "focus": "Evaporative air coolers · Industrial portable fans · Mist cooling for HK climates",
+  "sister_sites": ["www.dba.hk (manufacturer)", "www.cooler.hk (sales/rental)"],
+  "manufacturer": "DBA 迪比亞",
+  "regions_served": ["HK", "MO"],
+  "contacts": {
+    "phone": "+852 2121 0503",
+    "whatsapp": "+85221210503",
+    "email": "info@cooler.hk",
+    "instagram": "@cooler.hk"
+  },
+  "series": ["DEBI003 (Personal/Residential, 1.5K–5K CMH)", "DEBI002 (Commercial, 5K–9K CMH)", "DEBI001 (Industrial, 12K–18K CMH)", "DBA-S (Special)", "DBA-F (Industrial Fans, 25K–38K CMH)"],
+  "notes": "Crawled from dba.hk products.json + cooler.hk pages. Same shared API token / Render deploy flow as dryeaz-sg / ervee-com / erv-hk pattern. www.mist.com.hk and www.hkmist.com both redirect to www.mist.hk."
+}
